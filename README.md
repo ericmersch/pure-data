@@ -1,6 +1,6 @@
-# {{DECKDECKGO_TITLE}}
+# Pure Data
 
-{{DECKDECKGO_DESCRIPTION}} 
+Les mains dans le cambouisEric Mersch 19/07/2021 
 
 ## Table of contents
 
@@ -11,15 +11,15 @@
 
 ## Slides
 
-🔗 [https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}}](https://beta.deckdeckgo.io{{DECKDECKGO_BASE_HREF}})
+🔗 [https://beta.deckdeckgo.io/ericmmersch/pure-data/](https://beta.deckdeckgo.io/ericmmersch/pure-data/)
 
 ## Usage
 
 💻 To get started locally with this presentation, clone this repo and install its dependencies.
 
 ```
-git clone {{DECKDECKGO_GITHUB_REPO_URL}}
-cd {{DECKDECKGO_GITHUB_REPO_NAME}}
+git clone https://github.com/ericmersch/pure-data
+cd pure-data
 npm install
 ```
 
