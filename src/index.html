@@ -1,42 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
-
-    <base href="/ericmmersch/pure-data/"/>
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
-    img-src 'self' data: https:;
-    style-src 'self' 'unsafe-inline' https://cdn.firebase.com https://fonts.googleapis.com;
-    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
-    script-src 'self' blob: {{DECKDECKGO_EXTRA_SHAS}} https://cdn.firebase.com https://apis.google.com https://unpkg.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net;
-    connect-src 'self' https://deckdeckgo.com/ https://app.deckdeckgo.com/ wss://api.deckdeckgo.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/ https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-beta.appspot.com/ https://www.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://raw.githubusercontent.com/PrismJS/ https://raw.githubusercontent.com/deckgo/ https://api.tenor.com/;
-    frame-src https:">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,viewport-fit=cover">
+    <base href="/ericmmersch/pure-data/">
     <title>Pure Data</title>
-
     <meta property="og:site_name" content="Pure Data">
     <meta property="og:title" content="Pure Data">
-
-    <meta name="author" content="{{DECKDECKGO_AUTHOR}}">
-
+    <meta name="author" content="ericmmersch">
     <meta name="description" content="Les mains dans le cambouisEric Mersch 19/07/2021">
-
     <meta property="og:description" content="Les mains dans le cambouisEric Mersch 19/07/2021">
     <meta property="og:site_name" content="Pure Data">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://beta.deckdeckgo.io/ericmmersch/pure-data/">
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/{{DECKDECKGO_USER_ID}}%2Fpresentations%2F{{DECKDECKGO_DECKNAME}}%2Fdeckdeckgo.png?alt=media">
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fpresentations%2Fpure-data%2Fdeckdeckgo.png?alt=media">
     <meta property="og:image:type" content="image/png">
-
     <meta name="twitter:site" content="@deckdeckgo">
     <meta name="twitter:title" content="Pure Data">
     <meta name="twitter:description" content="Les mains dans le cambouisEric Mersch 19/07/2021">
-    <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/{{DECKDECKGO_USER_ID}}%2Fpresentations%2F{{DECKDECKGO_DECKNAME}}%2Fdeckdeckgo.png?alt=media">
+    <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fpresentations%2Fpure-data%2Fdeckdeckgo.png?alt=media">
     <meta name="twitter:card" content="summary_large_image">
-
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/ericmmersch/pure-data/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/ericmmersch/pure-data/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/ericmmersch/pure-data/assets/favicon/favicon-16x16.png">
@@ -44,7 +28,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-config" content="/ericmmersch/pure-data/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', async () => {
@@ -64,22 +47,16 @@
             });
         }
     </script>
-
     <script>
         window.ROOM_NAME = 'Pure Data';
         window.EMBEDDED = false;
         window.PENDING_REMOTE_REQUESTS = [];
         window.REMOTE_STATE = 0;
     </script>
-
     <link rel="manifest" href="manifest.json">
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="msapplication-tap-highlight" content="no">
-
-    {{DECKDECKGO_HEAD_EXTRA}}
-
     <style>
         :root {
             background: #ffffff;
@@ -92,12 +69,13 @@
             --ion-text-color: black;
         }
 
-        /* Until Web Components are loaded, don't display content */
+        /* Until Web Components are loaded, don&#39;t display content */
         body {
             background: #ffffff;
         }
 
-        ion-app.loading, ion-app.loading a {
+        ion-app.loading,
+        ion-app.loading a {
             color: transparent;
         }
 
@@ -109,87 +87,101 @@
             display: none;
         }
     </style>
-
+    <script defer="defer" src="main.9fe753fe283bb4123e10.js?6a18cbb60862a26aee79"></script>
 </head>
+
 <body>
-
-<ion-app class="loading">
-
-    <ion-menu id="ion-menu" side="start" type="overlay" swipeGesture="false" content-id="main">
-        <ion-content>
-            <deckgo-chapters></deckgo-chapters>
-        </ion-content>
-    </ion-menu>
-
-    <div class="ion-page" id="main">
-        <ion-header>
-            <ion-toolbar color="dark">
-                <ion-buttons slot="start">
-                    <ion-menu-button></ion-menu-button>
-                </ion-buttons>
-                <ion-title>Pure Data</ion-title>
-                <ion-buttons slot="end">
-                    <ion-button id="deckMenu"><ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/ellipsis-vertical.svg"></ion-icon></ion-button>
-                </ion-buttons>
-            </ion-toolbar>
-        </ion-header>
-
-        <ion-content force-overscroll="false" style="position: relative; --overflow: hidden;">
-            <main>
-                <deckgo-deck id="slider" embedded="true">
-
-                </deckgo-deck>
-            </main>
-
-            <deckgo-remote></deckgo-remote>
-
-            <button id="previous" class="navigation ion-activatable">
+    <ion-app class="loading">
+        <ion-menu id="ion-menu" side="start" type="overlay" swipegesture="false" content-id="main">
+            <ion-content>
+                <deckgo-chapters></deckgo-chapters>
+            </ion-content>
+        </ion-menu>
+        <div class="ion-page" id="main">
+            <ion-header>
+                <ion-toolbar color="dark">
+                    <ion-buttons slot="start">
+                        <ion-menu-button></ion-menu-button>
+                    </ion-buttons>
+                    <ion-title>Pure Data</ion-title>
+                    <ion-buttons slot="end">
+                        <ion-button id="deckMenu">
+                            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/ellipsis-vertical.svg"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content force-overscroll="false" style="position: relative; --overflow: hidden;">
+                <main>
+                    <deckgo-deck embedded="true" id="slider">
+                        <deckgo-slide-title custom-background="true">
+                            <h1 slot="title">Pure Data<br></h1>
+                            <section slot="content">Les mains dans le cambouis<br>
+                                <div><br></div>
+                                <div>Eric Mersch 19/07/2021</div>
+                            </section>
+                            <div slot="background"><svg width="100%" viewBox="0 0 500 150" preserveAspectRatio="none" fill="rgba(100, 29, 128, 1)" opacity="0.22" wave="upward">
+                                    <path d="M0.00,111.62 S62.50,35.00 125.00,67.70 S187.50,35.00 250.00,67.06 S312.50,36.29 375.00,61.29 S437.50,36.29 500.00,35.00 L500.00,150.00 L0.00,150.00 Z"></path>
+                                </svg></div>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Motivations</h2>
+                            <section slot="content" style="text-align: left;">
+                                <div>Langage open source dédié au son et à la vidéo</div>
+                                <div>Par blocs, en temps réel</div>
+                                <div>Multiplateforme (Widows, Mac, Linux, Rasperry Pi, Android, iPhone, Bela, VST)<br></div>
+                                <div>Pratique pour des installations avec capteurs<br></div>
+                            </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h1 slot="title">Exemples</h1>
+                        </deckgo-slide-title>
+                        <deckgo-slide-youtube src="https://youtu.be/ZuopGUPEkQo"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube src="https://youtu.be/OkXgk4gkMXA"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube src="https://youtu.be/rg9tmk0Jo-4"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube src="https://youtu.be/23g3Obgk8nI"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube src="https://youtu.be/rX1SbRJE_G4"></deckgo-slide-youtube>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Liens vers des codes<br></h2>
+                            <section slot="content">
+                                <div><a title="arbre à son" href="https://github.com/ericmersch/arbre_a_son">écorse</a><br></div>
+                                <div><a title="balançoire" href="https://github.com/ericmersch/balancoire">balançoire</a></div>
+                                <div><a title="bulles" href="https://github.com/ericmersch/bulles">bulles magiques</a></div>
+                                <div>escargots<br></div>
+                            </section>
+                        </deckgo-slide-title>
+                    </deckgo-deck>
+                </main>
+                <deckgo-remote></deckgo-remote><button id="previous" class="navigation ion-activatable">
+                    <ion-ripple-effect></ion-ripple-effect>
+                    <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/chevron-back.svg" aria-label="Previous slide"></ion-icon>
+                </button> <button id="next" class="navigation ion-activatable">
+                    <ion-ripple-effect></ion-ripple-effect>
+                    <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/chevron-forward.svg" aria-label="Next slide"></ion-icon>
+                </button>
+            </ion-content>
+        </div>
+        <ion-fab vertical="top" horizontal="end" slot="fixed" id="fullscreen-menu"><button id="slidePicker" class="navigation ion-activatable" aria-label="Jump to a particular slide">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/chevron-back.svg" aria-label="Previous slide"></ion-icon>
-            </button>
-
-            <button id="next" class="navigation ion-activatable">
+                <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/list.svg" aria-label="Jump to a particular slide"></ion-icon>
+            </button> <button id="fullScreen" class="navigation ion-activatable hide-on-mobile" aria-label="Full screen">
                 <ion-ripple-effect></ion-ripple-effect>
-                <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/chevron-forward.svg" aria-label="Next slide"></ion-icon>
-            </button>
-
-        </ion-content>
-    </div>
-
-    <ion-fab vertical="top" horizontal="end" slot="fixed" id="fullscreen-menu">
-        <button id="slidePicker" class="navigation ion-activatable" aria-label="Jump to a particular slide">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/list.svg" aria-label="Jump to a particular slide"></ion-icon>
-        </button>
-
-        <button id="fullScreen" class="navigation ion-activatable hide-on-mobile" aria-label="Full screen">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/contract.svg" aria-label="Exit full screen"></ion-icon>
-        </button>
-
-        <button id="remote" class="navigation ion-activatable">
-            <ion-ripple-effect></ion-ripple-effect>
-            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/phone-portrait.svg" aria-label="Open Remote"></ion-icon>
-        </button>
-    </ion-fab>
-
-    <!-- Ionic components anchors -->
-    <ion-popover-controller></ion-popover-controller>
-    <ion-modal-controller></ion-modal-controller>
-    <ion-alert-controller></ion-alert-controller>
-
-    <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
-        <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/twitter.svg" aria-label="Twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/linkedin.svg" aria-label="Linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/mail.svg" aria-label="Email" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/whatsapp.svg" aria-label="WhatsApp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
-        <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/hackernews.svg" aria-label="Hacker News" slot="hackernews" style="color: #ff6000; font-size: 1.6rem; display: block;"></ion-icon>
-    </web-social-share>
-</ion-app>
-
-<noscript>
-    Please enable Javascript to access this presentation.
-</noscript>
-
+                <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/contract.svg" aria-label="Exit full screen"></ion-icon>
+            </button> <button id="remote" class="navigation ion-activatable">
+                <ion-ripple-effect></ion-ripple-effect>
+                <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/phone-portrait.svg" aria-label="Open Remote"></ion-icon>
+            </button></ion-fab>
+        <ion-popover-controller></ion-popover-controller>
+        <ion-modal-controller></ion-modal-controller>
+        <ion-alert-controller></ion-alert-controller>
+        <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
+            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/twitter.svg" aria-label="Twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/linkedin.svg" aria-label="Linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/mail.svg" aria-label="Email" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/whatsapp.svg" aria-label="WhatsApp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
+            <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/hackernews.svg" aria-label="Hacker News" slot="hackernews" style="color: #ff6000; font-size: 1.6rem; display: block;"></ion-icon>
+        </web-social-share>
+    </ion-app><noscript>Please enable Javascript to access this presentation.</noscript>
 </body>
+
 </html>
