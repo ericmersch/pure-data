@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,viewport-fit=cover">
     <base href="/ericmmersch/pure-data/">
-    <title>Pure Data</title>
-    <meta property="og:site_name" content="Pure Data">
-    <meta property="og:title" content="Pure Data">
+    <title>PURE DATA</title>
+    <meta property="og:site_name" content="PURE DATA">
+    <meta property="og:title" content="PURE DATA">
     <meta name="author" content="ericmmersch">
-    <meta name="description" content="Les mains dans le cambouisEric Mersch 19/07/2021">
-    <meta property="og:description" content="Les mains dans le cambouisEric Mersch 19/07/2021">
-    <meta property="og:site_name" content="Pure Data">
+    <meta name="description" content="Introduction à puredata par l'exemple et la pratique. Atelier résonnance, Ixelles. 19/07/2021">
+    <meta property="og:description" content="Introduction à puredata par l'exemple et la pratique. Atelier résonnance, Ixelles. 19/07/2021">
+    <meta property="og:site_name" content="PURE DATA">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://beta.deckdeckgo.io/ericmmersch/pure-data/">
     <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fpresentations%2Fpure-data%2Fdeckdeckgo.png?alt=media">
     <meta property="og:image:type" content="image/png">
     <meta name="twitter:site" content="@deckdeckgo">
-    <meta name="twitter:title" content="Pure Data">
-    <meta name="twitter:description" content="Les mains dans le cambouisEric Mersch 19/07/2021">
+    <meta name="twitter:title" content="PURE DATA">
+    <meta name="twitter:description" content="Introduction à puredata par l'exemple et la pratique. Atelier résonnance, Ixelles. 19/07/2021">
     <meta name="twitter:image:src" content="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fpresentations%2Fpure-data%2Fdeckdeckgo.png?alt=media">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="apple-touch-icon" sizes="180x180" href="/ericmmersch/pure-data/assets/favicon/apple-touch-icon.png">
@@ -48,7 +48,7 @@
         }
     </script>
     <script>
-        window.ROOM_NAME = 'Pure Data';
+        window.ROOM_NAME = 'PURE DATA';
         window.EMBEDDED = false;
         window.PENDING_REMOTE_REQUESTS = [];
         window.REMOTE_STATE = 0;
@@ -103,7 +103,7 @@
                     <ion-buttons slot="start">
                         <ion-menu-button></ion-menu-button>
                     </ion-buttons>
-                    <ion-title>Pure Data</ion-title>
+                    <ion-title>PURE DATA</ion-title>
                     <ion-buttons slot="end">
                         <ion-button id="deckMenu">
                             <ion-icon src="/ericmmersch/pure-data/assets/icons/ionicons/ellipsis-vertical.svg"></ion-icon>
@@ -115,33 +115,44 @@
                 <main>
                     <deckgo-deck embedded="true" id="slider">
                         <deckgo-slide-title custom-background="true">
-                            <h1 slot="title">Pure Data<br></h1>
-                            <section slot="content">Les mains dans le cambouis<br>
+                            <h1 slot="title" style="letter-spacing: 0.2em; font-size: 5em;"><span style="color: rgb(255, 255, 255);">PURE DATA</span><br></h1>
+                            <section slot="content" style="font-size: 2.33333em; letter-spacing: 0.1em;">
+                                <div><span style="color: rgb(255, 255, 255);">un premier contact<br></span></div>
                                 <div><br></div>
-                                <div>Eric Mersch 19/07/2021</div>
+                                <div><span style="color: rgb(255, 255, 255);">eric mersch</span><span style="color: rgb(255, 255, 255);"></span></div><span style="color: rgb(255, 255, 255);"></span>
                             </section>
-                            <div slot="background"><svg width="100%" viewBox="0 0 500 150" preserveAspectRatio="none" fill="rgba(100, 29, 128, 1)" opacity="0.22" wave="upward">
-                                    <path d="M0.00,111.62 S62.50,35.00 125.00,67.70 S187.50,35.00 250.00,67.06 S312.50,36.29 375.00,61.29 S437.50,36.29 500.00,35.00 L500.00,150.00 L0.00,150.00 Z"></path>
-                                </svg></div>
+                            <div slot="background">
+                                <deckgo-lazy-img img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fassets%2Fimages%2Fpremiercontact.jpg?alt=media&amp;token=c9b2a0b1-3062-4d3b-a703-1c76a67c190c" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fassets%2Fimages%2Fpremiercontact.jpg?alt=media&amp;token=c9b2a0b1-3062-4d3b-a703-1c76a67c190c"></deckgo-lazy-img>
+                            </div>
                         </deckgo-slide-title>
                         <deckgo-slide-title>
-                            <h2 slot="title">Motivations</h2>
+                            <h2 slot="title">Les présentations<br><br></h2>
+                            <section slot="content">
+                                <div>Qu&#39;est-ce qui vous amène?<br></div>
+                                <div>Vos envies actuelles?</div>
+                                <div>Vos projets?</div>
+                                <div>En deux mots, puredata ça vous inspire quoi?</div>
+                            </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title style="--color:rgba(255, 255, 255,1); --background:rgba(109, 120, 127,1);">
+                            <h2 slot="title"><span style="color: rgb(255, 255, 255);">Quelle est donc cette matière étrange?</span><br><br></h2>
                             <section slot="content" style="text-align: left;">
-                                <div>Langage open source dédié au son et à la vidéo</div>
-                                <div>Par blocs, en temps réel</div>
-                                <div>Multiplateforme (Widows, Mac, Linux, Rasperry Pi, Android, iPhone, Bela, VST)<br></div>
-                                <div>Pratique pour des installations avec capteurs<br></div>
+                                <div><span style="color: rgb(255, 255, 255);">Langage open source dédié au son et à la vidéo</span></div>
+                                <div><span style="color: rgb(255, 255, 255);">Par blocs, en temps réel</span></div>
+                                <div><span style="color: rgb(255, 255, 255);">Multiplateforme (Widows, Mac, Linux, Rasperry Pi, Android, iPhone, Bela, VST)<br></span></div>
+                                <div><span style="color: rgb(255, 255, 255);">Pratique pour des installations avec capteurs</span><br></div>
                             </section>
                         </deckgo-slide-title>
-                        <deckgo-slide-title>
-                            <h1 slot="title">Exemples</h1>
+                        <deckgo-slide-title style="--background:rgba(109, 120, 127,1);">
+                            <h1 slot="title"><span style="color: rgb(255, 255, 255);">Exemples <br></span></h1>
                         </deckgo-slide-title>
-                        <deckgo-slide-youtube src="https://youtu.be/ZuopGUPEkQo"></deckgo-slide-youtube>
-                        <deckgo-slide-youtube src="https://youtu.be/OkXgk4gkMXA"></deckgo-slide-youtube>
-                        <deckgo-slide-youtube src="https://youtu.be/rg9tmk0Jo-4"></deckgo-slide-youtube>
-                        <deckgo-slide-youtube src="https://youtu.be/23g3Obgk8nI"></deckgo-slide-youtube>
-                        <deckgo-slide-youtube src="https://youtu.be/rX1SbRJE_G4"></deckgo-slide-youtube>
-                        <deckgo-slide-title>
+                        <deckgo-slide-youtube style="--background:rgba(0, 0, 0,1);" src="https://youtu.be/ZuopGUPEkQo"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube style="--background:rgba(0, 0, 0,1);" src="https://youtu.be/OkXgk4gkMXA"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube style="--background:rgba(0, 0, 0,1);" src="https://youtu.be/rg9tmk0Jo-4"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube style="--background:rgba(17, 17, 17,1);" src="https://youtu.be/23g3Obgk8nI"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube style="--background:rgba(0, 0, 0,1);" src="https://youtu.be/rX1SbRJE_G4"></deckgo-slide-youtube>
+                        <deckgo-slide-youtube style="--background:rgba(17, 17, 17,1);" src="https://www.youtube.com/watch?v=luvp0p3MzdY"></deckgo-slide-youtube>
+                        <deckgo-slide-title style="--background:rgba(109, 120, 127,1); --color:rgba(255, 255, 255,1);">
                             <h2 slot="title">Liens vers des codes<br></h2>
                             <section slot="content">
                                 <div><a title="arbre à son" href="https://github.com/ericmersch/arbre_a_son">écorse</a><br></div>
@@ -149,6 +160,57 @@
                                 <div><a title="bulles" href="https://github.com/ericmersch/bulles">bulles magiques</a></div>
                                 <div>escargots<br></div>
                             </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Et si on essayait?<br></h2>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Découverte pas à pas<br></h2>
+                            <section slot="content">
+                                <div>Découverte de l&#39;interface</div>
+                                <div>Mon premier code puredata</div>
+                                <div>Hygiène de code<br></div>
+                            </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Un premier projet: le mélodica <br></h2>
+                            <section slot="content" style="text-align: left;">
+                                <div>Synthèse additive</div>
+                                <div>Partiels inharmoniques</div>
+                                <div>Modulation en amplitude</div>
+                                <div>Filtres fréquentiels</div>
+                                <div>Ma recette magique!!!</div>
+                                <div>Une interface de contrôle &quot;à la carte&quot;<br></div>
+                            </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Un premier projet: le mélodica numérique<br><br></h2>
+                            <section slot="content" style="text-align: left;">
+                                <div>Synthèse additive et partiels inharmoniques<br></div>
+                                <div>Modulation en amplitude (AM)</div>
+                                <div>Filtres fréquenciels</div>
+                                <div>Ma recette secrète</div>
+                                <div>Une interface &quot;à la carte&quot;</div>
+                            </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title>
+                            <h2 slot="title">Quelque chose à partager?<br><br></h2>
+                            <section slot="content">
+                                <div>Des remarques, des choses à améliorer, des choses que vous avez appréciées?<br></div>
+                                <div>De nouvelles envies?</div>
+                                <div>Des idées?</div>
+                                <div>Des questions?</div>
+                            </section>
+                        </deckgo-slide-title>
+                        <deckgo-slide-title custom-background="true">
+                            <h2 slot="title"><span style="color: rgb(255, 255, 255);">Restons en contact<br><br></span></h2>
+                            <section slot="content">
+                                <div><span style="color: rgb(255, 255, 255);">instagram: @ericmersch</span></div>
+                                <div><span style="color: rgb(255, 255, 255);">github: @ericmersch</span></div>
+                            </section>
+                            <div slot="background">
+                                <deckgo-lazy-img img-src="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fassets%2Fimages%2F354397.jpg?alt=media&amp;token=f298b17d-f466-4fae-b61f-7c52f1b82355" img-alt="https://firebasestorage.googleapis.com/v0/b/deckdeckgo-studio-prod.appspot.com/o/XCH4FM1IDgaZkkMQ8Nfrj2hSEtI2%2Fassets%2Fimages%2F354397.jpg?alt=media&amp;token=f298b17d-f466-4fae-b61f-7c52f1b82355"></deckgo-lazy-img>
+                            </div>
                         </deckgo-slide-title>
                     </deckgo-deck>
                 </main>
